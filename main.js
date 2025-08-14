@@ -63,7 +63,12 @@ function handleAuth(args) {
       console.log(`Email: ${credentials.email}`);
       console.log("Access Token: [hidden]");
     } else {
-      console.log("No credentials found.");
+      console.log(
+        "No credentials found. Please run 'autodaily auth <name> <jira_access_token>' to set your credentials."
+      );
+      console.log(
+        "You can get your access token from https://id.atlassian.com/manage-profile/security/api-tokens"
+      );
     }
   } else if (args.length === 2) {
     const [name, token] = args;
@@ -80,7 +85,12 @@ function handleLlmApiKey(args) {
     if (apiKey) {
       console.log("LLM API Key: [hidden]");
     } else {
-      console.log("No LLM API key found.");
+      console.log(
+        "No LLM API key found. Please run 'autodaily llm-apikey <api_key>' to set your API key."
+      );
+      console.log(
+        "You can get your API key from https://aistudio.google.com/apikey"
+      );
     }
   } else if (args.length === 1) {
     const [apiKey] = args;
