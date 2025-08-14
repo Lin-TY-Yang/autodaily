@@ -1,0 +1,17 @@
+{
+  "name": "autodaily",
+  "version": "1.0.0",
+  "main": "main.js",
+  "license": "MIT",
+  "scripts": {
+    "build:macos-arm64": "pkg main.js --targets node20-macos-arm64 --output dist/autodaily"
+  },
+  "dependencies": {
+    "@google/gemini-cli": "^0.1.13",
+    "@google/generative-ai": "^0.24.1",
+    "chrono-node": "^2.8.3"
+  },
+  "devDependencies": {
+    "@yao-pkg/pkg": "^6.6.0"
+  }
+}
