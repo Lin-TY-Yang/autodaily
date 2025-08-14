@@ -4,7 +4,8 @@
   "main": "main.js",
   "license": "MIT",
   "scripts": {
-    "build:macos-arm64": "pkg main.js --targets node20-macos-arm64 --output dist/autodaily"
+    "build:macos-arm64": "pkg main.js --targets node20-macos-arm64 --output dist/autodaily",
+    "install:macos-arm64": "npm run build:macos-arm64 && cp dist/autodaily ~/.local/bin/autodaily"
   },
   "dependencies": {
     "@google/gemini-cli": "^0.1.13",

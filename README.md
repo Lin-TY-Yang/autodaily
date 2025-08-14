@@ -25,15 +25,21 @@ AutoDaily is a Node.js CLI application that helps developers maintain daily work
 - JIRA account with API access
 - Google Gemini API key
 
-## Installation
 
-### Development Setup
+## Development Setup
 Install dependencies:
 ```bash
 npm install
 ```
 
-3. Set up your credentials:
+## Installation
+The command is default to install the command under ~/.local/bin
+```
+npm run install:macos-arm64
+```
+
+## Usage
+### Set up your credentials:
 ```bash
 # Set JIRA credentials
 npm start auth <email> <access-token>
