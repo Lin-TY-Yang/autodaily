@@ -67,7 +67,7 @@ function handleAuth(args) {
     }
   } else if (args.length === 2) {
     const [name, token] = args;
-    saveCredentials(name, token);
+    saveCredentials(name + "@viewsonic.com", token);
   } else {
     console.error("Usage: autodaily auth <name> <token>");
     process.exit(1);
